@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+/* gray1: 2f3030 gray2: 313232 gray3: 2d2e2e gray4: 424444; gray5: 6d6e6e; yellow: dc9e11 text: 9a9b9c */
+html {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: #9a9b9c;
+}
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+}
+
+
+
+
+

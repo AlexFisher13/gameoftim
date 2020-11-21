@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+    <audio id="horseSound" src="http://www.w3schools.com/html/horse.ogg"></audio>
+    <audio id="catSound" src="audio/cat.ogg"></audio>
+    <audio id="goatSound" src="audio/goat.ogg"></audio>
+    <audio id="wolfSound" src="audio/wolf.ogg"></audio>
+    <audio id="lionSound" src="audio/lion.mp3"></audio>
+    <audio id="donkeySound" src="audio/donkey.mp3"></audio>
+    <audio id="tigerSound" src="audio/tiger.mp3"></audio>
+
+    <img id="horse" src="img/horse.jpg">
+    <img id="cat" src="img/cat.jpg">
+    <img id="goat" src="img/goat.jpg">
+    <img id="wolf" src="img/wolf.jpg">
+    <img id="lion" src="img/lion.jpg">
+    <img id="donkey" src="img/donkey.jpg">
+    <img id="tiger" src="img/tiger.jpg">
+
+
+    <script type="text/javascript">
+        var imgList = document.getElementsByTagName('img');
+        for (var i = 0; i < imgList.length; i++) {
+            imgList[i].addEventListener('click', playSound);
+        }
+        function playSound() {
+            document.getElementById(this.id + 'Sound').play();
+        }
+    </script>
+</body>
+</html>
